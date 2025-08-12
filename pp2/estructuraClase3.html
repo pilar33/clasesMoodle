@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>PP2 · Clase 3 · Unidad 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --ink:#0f172a; --muted:#64748b; --brand:#2563eb; --bg:#f8fafc; --ok:#16a34a; --warn:#ea580c; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--ink); margin:0; }
+    .wrap { max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+    .badge { display:inline-block; padding: 4px 10px; border-radius:999px; background:#e0e7ff; color:#1e3a8a; font-weight:600; font-size:12px; letter-spacing:.3px; }
+    h1 { margin: 8px 0 16px; font-size: 28px; }
+    h2 { margin: 24px 0 8px; font-size: 20px; }
+    h3 { margin: 16px 0 6px; font-size: 16px; color: var(--muted); }
+    p, li { line-height: 1.5; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:18px; margin:14px 0; box-shadow: 0 1px 2px rgba(0,0,0,.03); }
+    .grid { display:grid; gap:12px; }
+    @media (min-width:820px){ .grid-2 { grid-template-columns: 1fr 1fr; } }
+    .pill { padding:2px 8px; border-radius:999px; font-size:12px; font-weight:600; }
+    .pill.ok { background:#dcfce7; color:#14532d; }
+    .pill.warn { background:#ffedd5; color:#7c2d12; }
+    .divider { height:1px; background:#e5e7eb; margin:12px 0; }
+    ul.checklist { list-style: none; padding-left: 0; }
+    ul.checklist li { padding-left: 28px; position: relative; margin: 6px 0; }
+    ul.checklist li::before { content:"□"; position:absolute; left:0; color:#94a3b8; }
+    .time { color: var(--muted); font-size: 12px; }
+    a { color: var(--brand); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">UNIDAD 1 · Alcance, Límites, Propuesta del Subproceso</span>
+    <h1>PP2 · Clase 3 · Plan de encuentro</h1>
+    <p class="time">Duración total: 2 h 30 min · Modalidad: presencial/virtual</p>
+
+    <div class="card">
+      <h2>Objetivo de la clase</h2>
+      <ul>
+        <li>Completar y <strong>validar el alcance</strong> del subproceso elegido (sistema de pagos).</li>
+        <li>Definir y/o ajustar los <strong>límites (exclusiones)</strong> y los <strong>objetivos del proyecto</strong>.</li>
+        <li>Redactar la <strong>propuesta de sistema</strong> para el subproceso, con diagnóstico breve.</li>
+        <li>Dejar listo el <strong>documento de requerimientos</strong> del subproceso (borrador) para la próxima iteración.</li>
+      </ul>
+      <div class="divider"></div>
+      <p><span class="pill ok">Recordatorio</span> Esta clase continúa contenidos de la <strong>Unidad 1</strong> del programa oficial.</p>
+    </div>
+
+    <div class="card">
+      <h2>Agenda del encuentro</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3>1) Apertura y encuadre (10’)</h3>
+          <ul>
+            <li>Qué se espera hoy: alcance, límites, propuesta, requerimientos (borrador).</li>
+            <li>Cómo impacta en la defensa 1 (17/10) y defensa 2 (12/12).</li>
+          </ul>
+        </div>
+        <div>
+          <h3>2) Entrevistas con el ISDM (60–90’)</h3>
+          <ul>
+            <li>Bloque sincrónico con <strong>operadores</strong> (caja y validación) y, si es posible, con <strong>responsable TIC</strong>.</li>
+            <li>Cada grupo usa su <em>checklist</em> de preguntas del subproceso.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <div>
+          <h3>3) Trabajo por grupos (30’)</h3>
+          <ul>
+            <li>Refinar <strong>Alcance</strong> (solo del subproceso elegido).</li>
+            <li>Precisar <strong>Límites</strong> (qué no se hace).</li>
+            <li>Ajustar <strong>Objetivos</strong> y <strong>Diagnóstico a nivel proceso</strong>.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>4) Mini revisión cruzada (10–15’)</h3>
+          <ul>
+            <li>Intercambio de documentos entre dos grupos del mismo dominio.</li>
+            <li>Feedback rápido: dudas, ambigüedades, riesgos.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <div>
+          <h3>5) Cierre y próximos pasos (5’)</h3>
+          <ul>
+            <li>Qué debe quedar en Drive y Trello hoy.</li>
+            <li>Anticipo Clase 4: <strong>DER de bajo refinamiento integrado</strong>.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="pill warn">Tip</p>
+          <p>El alcance debe describir <em>funcionalidades</em> concretas del subproceso (no generalidades del sistema completo).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Materiales de referencia</h2>
+      <ul>
+        <li>Documento: <strong>Resumen Sistema de Gestión ISDM W-1.pdf</strong> (para la <em>Lista de Procesos</em> de la organización).</li>
+        <li><strong>Checklist de entrevista</strong> por subproceso (cada grupo lo tiene en su carpeta).</li>
+        <li>Plantilla de <strong>Especificación de Requerimientos</strong> (entregada por el docente).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Actividades de la clase (Unidad 1)</h2>
+      <ul class="checklist">
+        <li>Confirmar <strong>subproceso</strong> asignado por grupo.</li>
+        <li>Entrevistar a operadores/áreas clave y <strong>registrar evidencias</strong> (minutas, capturas, ejemplos).</li>
+        <li>Actualizar documento: <strong>Alcance</strong>, <strong>Límites</strong>, <strong>Objetivos</strong>, <strong>Diagnóstico a nivel proceso</strong>.</li>
+        <li>Redactar <strong>Propuesta de Sistema</strong> (mejoras puntuales por proceso).</li>
+        <li>Subir a <strong>Drive</strong> y reflejar avance en <strong>Trello</strong> (columnas, responsables, fechas).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Entregables al finalizar la clase</h2>
+      <ul>
+        <li>Documento “Estudio Previo” actualizado con:
+          <ul>
+            <li><strong>II.7 Alcance del Subproceso</strong> (funcionalidades incluidas).</li>
+            <li><strong>II.8 Límites del Sistema</strong> (exclusiones claras).</li>
+            <li><strong>II.9 Objetivos del Proyecto</strong> (medibles y alineados al subproceso).</li>
+            <li><strong>III.11 Diagnóstico a nivel proceso</strong> (problemas actuales).</li>
+            <li><strong>IV.13 Propuesta de mejoras</strong> y <strong>IV.14 Cuadro comparativo</strong> (actual vs. propuesto).</li>
+          </ul>
+        </li>
+        <li>Plantilla de Requerimientos del subproceso: <em>borrador</em> (actores, HU preliminares, flujos y entidades tentativas).</li>
+        <li>Trello actualizado: Sprint 1 con tareas y responsables (estado real).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Rúbrica rápida de hoy (auto-chequeo)</h2>
+      <ul class="checklist">
+        <li>El <strong>Alcance</strong> solo contiene funcionalidades del subproceso (no del sistema completo).</li>
+        <li>Los <strong>Límites</strong> listan claramente lo que no se hará (ej.: becas, contabilidad general, etc.).</li>
+        <li>Los <strong>Objetivos</strong> son específicos y medibles (ej.: “Reducir validación manual a &lt;24h”).</li>
+        <li>El <strong>Diagnóstico</strong> mapea problemas a mejoras de la Propuesta.</li>
+        <li>Todo está subido a <strong>Drive</strong> y reflejado en <strong>Trello</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Próxima clase (Clase 4 — adelanto)</h2>
+      <p><strong>DER de bajo refinamiento integrado</strong> del subsistema de pagos (unimos DER parciales de los grupos).<br/>
+      Traer: DFD Nivel 1 validado + entidades preliminares.</p>
+    </div>
+  </div>
+</body>
+</html>
