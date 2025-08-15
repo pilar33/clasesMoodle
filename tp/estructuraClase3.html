@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Taller · Clase 3 · Git & GitHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --ink:#0f172a; --muted:#64748b; --brand:#2563eb; --bg:#f8fafc; }
+    body { font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif; background:var(--bg); color:var(--ink); margin:0; }
+    .wrap { max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+    .badge { display:inline-block; padding:4px 10px; border-radius:999px; background:#e0e7ff; color:#1e3a8a; font-weight:600; font-size:12px; letter-spacing:.3px; }
+    h1 { margin:8px 0 16px; font-size:28px; }
+    h2 { margin:24px 0 8px; font-size:20px; }
+    h3 { margin:16px 0 6px; font-size:16px; color:var(--muted); }
+    p, li { line-height:1.5; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:18px; margin:14px 0; box-shadow:0 1px 2px rgba(0,0,0,.03); }
+    .grid { display:grid; gap:12px; }
+    @media (min-width:820px){ .grid-2 { grid-template-columns: 1fr 1fr; } }
+    .pill { padding:2px 8px; border-radius:999px; font-size:12px; font-weight:600; display:inline-block; }
+    .pill.ok { background:#dcfce7; color:#14532d; }
+    .pill.tip { background:#e0f2fe; color:#075985; }
+    .divider { height:1px; background:#e5e7eb; margin:12px 0; }
+    ul.checklist { list-style:none; padding-left:0; }
+    ul.checklist li { padding-left:28px; position:relative; margin:6px 0; }
+    ul.checklist li::before { content:"□"; position:absolute; left:0; color:#94a3b8; }
+    .time { color:var(--muted); font-size:12px; }
+    a { color:var(--brand); text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">TALLER · Clase 3</span>
+    <h1>Git & GitHub – Plan de encuentro</h1>
+    <p class="time">Duración: 2 h – 2 h 30 min · Modalidad: práctica guiada</p>
+
+    <div class="card">
+      <h2>Objetivos</h2>
+      <ul>
+        <li>Entender el rol de <strong>Git</strong> (control de versiones) y <strong>GitHub</strong> (repositorio remoto).</li>
+        <li>Usar comandos básicos: <code>init</code>, <code>clone</code>, <code>add</code>, <code>commit</code>, <code>push</code>, <code>pull</code>.</li>
+        <li>Configurar un repo local y conectarlo con GitHub.</li>
+        <li>Practicar trabajo colaborativo y resolver un conflicto simple.</li>
+      </ul>
+      <div class="divider"></div>
+      <p><span class="pill ok">Requisitos</span> Git instalado y cuenta activa en GitHub.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contenidos</h2>
+      <ul>
+        <li>Flujo básico: Working Directory → Staging → Repository → Remote.</li>
+        <li>Comandos esenciales de Git (individual y colaborativo).</li>
+        <li>GitHub: creación de repos, remotos, permisos básicos.</li>
+        <li>Buenas prácticas de commits y mensajes.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Agenda</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3>1) Intro breve (15–20’)</h3>
+          <ul>
+            <li>¿Qué resuelve Git? ¿Qué aporta GitHub?</li>
+            <li>Diagrama del flujo local ↔ remoto.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>2) Demo docente (20–25’)</h3>
+          <ul>
+            <li><code>git init</code>, <code>add</code>, <code>commit</code>, <code>remote</code>, <code>push</code>.</li>
+            <li>Creación repo en GitHub y primer envío.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <div>
+          <h3>3) Práctica por grupos (60–75’)</h3>
+          <ul>
+            <li>Crear repo local, conectarlo con GitHub y hacer 2 commits por integrante.</li>
+            <li><strong>Push/Pull</strong> entre compañeros.</li>
+            <li>Simular y resolver un conflicto simple.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>4) Cierre (10’)</h3>
+          <ul>
+            <li>Repaso de comandos y buenas prácticas.</li>
+            <li>Entregables y próximos pasos.</li>
+          </ul>
+        </div>
+      </div>
+      <p><span class="pill tip">Tip</span> Mensajes de commit claros y en imperativo. Ej.: <em>“Agrega validación de formulario de pago”</em>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Materiales</h2>
+      <ul>
+        <li>Presentación de la clase (slides del docente).</li>
+        <li>Guía práctica paso a paso (PDF/Doc). <a href="#">[enlace]</a></li>
+        <li>Cartilla resumida de comandos y flujo. <a href="#">[enlace]</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Actividad en clase (checklist)</h2>
+      <ul class="checklist">
+        <li>Configurar identidad: <code>git config --global user.name / user.email</code>.</li>
+        <li>Inicializar repo: <code>git init</code> y crear <code>README.md</code>.</li>
+        <li>Primer commit: <code>git add</code> + <code>git commit -m</code>.</li>
+        <li>Crear repo en GitHub y conectar: <code>git remote add origin</code>.</li>
+        <li><code>git push -u origin main</code> (o la rama que usen).</li>
+        <li>Clonar desde otra máquina/compañero: <code>git clone</code>.</li>
+        <li>Pull/Push y conflicto simple → resolver y documentar.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Entregables</h2>
+      <ul>
+        <li>Repositorio en GitHub del grupo con <strong>mínimo 2 commits por integrante</strong>.</li>
+        <li>Un archivo con <strong>conflicto resuelto</strong> (evidencia en historial).</li>
+        <li>Captura del historial: <code>git log --oneline</code> o vista de commits en GitHub.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Próxima clase (adelanto)</h2>
+      <p><strong>Autenticación en Django</strong> + flujo de trabajo con ramas y PRs (Git colaborativo aplicado al proyecto del subproceso).</p>
+    </div>
+  </div>
+</body>
+</html>
