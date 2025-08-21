@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Taller · Organización de la Clase – Django inicial + MySQL + GitHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{--ink:#0f172a;--muted:#64748b;--bg:#f8fafc;--card:#ffffff;--line:#e5e7eb;--brand:#2563eb}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);margin:0}
+    .wrap{max-width:980px;margin:24px auto;padding:0 16px}
+    .badge{display:inline-block;padding:4px 10px;border-radius:999px;background:#e0e7ff;color:#1e3a8a;font-weight:600;font-size:12px}
+    h1{margin:8px 0 16px;font-size:26px}
+    h2{margin:18px 0 8px;font-size:20px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+    .muted{color:var(--muted);font-size:13px}
+    ul{margin:8px 0 0 18px}
+    .time{color:var(--muted);font-size:12px}
+    .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;background:#e2e8f0;color:#0f172a}
+    a{color:var(--brand);text-decoration:none}
+    code{background:#f1f5f9;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">TALLER · Organización de la clase</span>
+    <h1>Django inicial + MySQL + Migraciones + Git/GitHub</h1>
+    <p class="time">Duración: 2 h 30 min · Modalidad: práctica guiada</p>
+
+    <div class="card">
+      <h2>Objetivos</h2>
+      <ul>
+        <li>Verificar Python y crear/activar <strong>entorno virtual</strong>.</li>
+        <li>Instalar <strong>Django</strong> y crear proyecto + app.</li>
+        <li>Conectar a <strong>MySQL</strong> y ejecutar <strong>migraciones</strong>.</li>
+        <li>Inicializar repositorio, usar <code>.gitignore</code> y publicar en <strong>GitHub</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Agenda (con tiempos)</h2>
+      <ul>
+        <li><strong>0:00–0:05</strong> · Apertura y objetivos.</li>
+        <li><strong>0:05–0:15</strong> · Verificación de Python/pip y por qué usar <em>venv</em>.</li>
+        <li><strong>0:15–0:30</strong> · Crear/activar <code>venv</code> e instalar Django.</li>
+        <li><strong>0:30–0:40</strong> · Marco MVT (breve) y flujo URL → Vista → Modelo → Template.</li>
+        <li><strong>0:40–1:00</strong> · <code>startproject</code>, <code>startapp</code> y estructura básica.</li>
+        <li><strong>1:00–1:20</strong> · Conexión a MySQL (<code>mysqlclient</code>) y <code>settings.DATABASES</code>.</li>
+        <li><strong>1:20–1:35</strong> · <code>makemigrations</code> / <code>migrate</code> y tablas creadas.</li>
+        <li><strong>1:35–2:15</strong> · Git: <code>.gitignore</code>, primer commit, remoto y <code>push</code> a GitHub.</li>
+        <li><strong>2:15–2:30</strong> · Cierre: dudas + checklist de entregables.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Actividades en clase</h2>
+      <ul>
+        <li>Crear y activar <code>venv</code>; instalar Django y comprobar <code>runserver</code>.</li>
+        <li>Crear proyecto <code>django-admin startproject</code> y app <code>python manage.py startapp</code>.</li>
+        <li>Instalar <code>mysqlclient</code>, configurar <code>DATABASES</code> y ejecutar migraciones.</li>
+        <li>Preparar <code>.gitignore</code> (excluir <code>venv/</code>, <code>__pycache__/</code>, <code>.env</code>, <code>*.log</code>).</li>
+        <li>Inicializar Git, primer commit y publicar en GitHub. Agregar a la docente como colaboradora.</li>
+      </ul>
+      <p class="muted">Preguntas guía: ¿Qué tablas se crean al migrar? ¿Para qué sirven <code>auth_user</code>, <code>auth_group</code>?</p>
+    </div>
+
+    <div class="card">
+      <h2>Entregables</h2>
+      <ul>
+        <li>Repositorio en GitHub (con <code>.gitignore</code>) y acceso a la docente.</li>
+        <li>Captura de <code>runserver</code> o de la página de inicio.</li>
+        <li>Breve nota del grupo: qué ocurrió al ejecutar <code>migrate</code> (tablas creadas y propósito).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Materiales</h2>
+      <ul>
+        <li>Guía 1: Python/venv · Instalación Django · MVT · Proyecto/App (subida en la plataforma).</li>
+        <li>Guía 2: MySQL · <code>mysqlclient</code> · <code>DATABASES</code> · Migraciones · ORM básico (subida en la plataforma).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Próxima clase (adelanto)</h2>
+      <p><strong>Autenticación y perfiles</strong>: login/logout, modelo de usuarios, grupos y permisos; integración con el proyecto.</p>
+    </div>
+  </div>
+</body>
+</html>
 
